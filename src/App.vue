@@ -17,13 +17,17 @@ export default {
 
 <template>
 
-<AppHeader />
-<AppMain />
-<AppFooter />
+  <div class="container">
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
+  </div>
+
 
 </template>
 
 
-<style>
+<style lang="scss">
+@use './assets/scss/main.scss';
 
 </style>
