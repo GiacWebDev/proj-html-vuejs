@@ -7,7 +7,19 @@ export default {
 
 <template>
 
-  <h1>NavBar</h1>
+  <div class="container">
+    <div class="row row-cols-2">
+
+      <div class="col">
+        logo
+      </div>
+
+      <div class="col">
+        menu + cta 
+      </div>
+
+    </div>
+  </div>
   
 </template>
 
