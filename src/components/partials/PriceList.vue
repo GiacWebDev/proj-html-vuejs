@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-<div class="our-prices white-text text-center">
+<div class="our-prices white-text text-center py-5 ">
   <div class="container">
 
     <div class="row">

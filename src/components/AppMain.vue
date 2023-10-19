@@ -2,12 +2,18 @@
 
 import Portfolio from './partials/Portfolio.vue';
 import PriceList from './partials/PriceList.vue';
+import Blog from './partials/Blog.vue';
+import Testimonial from './partials/Testimonial.vue';
+import Partner from './partials/Partner.vue';
 
 export default {
   name: 'AppMain',
   components: {
     Portfolio,
-    PriceList
+    PriceList,
+    Blog,
+    Testimonial,
+    Partner
   }
 }
 </script>
@@ -89,13 +95,13 @@ export default {
   <PriceList />
   
   <!-- bianca -->
-  <div class="Blog"></div>
+  <Blog />
   
   <!-- bianca -->
-  <div class="Testimonials"></div>
+  <Testimonial />
   
   <!-- bianca -->
-  <div class="Sponsors"></div>
+  <Partner />
 
 
 
@@ -106,7 +112,7 @@ export default {
 @use '../assets/scss/main.scss' as *;
 
 .container {
-  height: 600px;
+  align-items: center;
 }
 
 .Start-your-project {
