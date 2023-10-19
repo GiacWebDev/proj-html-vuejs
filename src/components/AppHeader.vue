@@ -43,6 +43,9 @@ export default {
 
  header {
   background-color: $light-primary;
+  .jumbotron {
+    height: 500px;
+  }
 }
 
 </style>

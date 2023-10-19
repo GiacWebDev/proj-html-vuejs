@@ -6,7 +6,13 @@ export default {
 
 
 <template>
-<h1>Footer</h1>
+
+<div class="Newsletter"></div>
+
+<div class="infos"></div>
+
+<div class="copyright"></div>
+
 </template>
 
 
