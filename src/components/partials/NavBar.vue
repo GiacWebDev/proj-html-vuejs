@@ -7,7 +7,7 @@ export default {
 
 <template>
 
-  <div class="container debug">
+  <div class="container">
     <div class="row row-cols-2">
 
       <div class="col">
@@ -34,6 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/scss/main.scss' as *;
+
 
 .col {
   display: flex;

@@ -10,25 +10,54 @@
 }
 
 body {
-  font-size: 15px;
+  font-size: 14px;
 }
 
+
+// DEBUGS
+
 .debug {
-  border: 1px solid black;
+  border: 1px solid wheat;
 }
 
 .debug-bg {
   background-color: antiquewhite;
 }
 
+// FONTS
+
+h1,
+h2,
+h3,
+h4, 
+h5 {
+  text-transform: capitalize;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+// BOTTONI
+
 .btns {
   padding: 4px 20px;
   border: 0px;
   border-radius: 50px;
   font-size: 1rem;
+  text-transform: capitalize;
 }
 
+// CLASSI COLORE TESTI
+
+.white-text {
+  color: $card-light;
+}
 
 .text-active {
   color: $section-title;
+}
+
+.light-blue-text {
+  color: $light-blue-text;
 }
