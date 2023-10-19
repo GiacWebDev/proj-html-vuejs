@@ -17,11 +17,10 @@ export default {
 
 <template>
 
-  <div class="container">
-    <AppHeader />
-    <AppMain />
-    <AppFooter />
-  </div>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
+
 
 
 </template>
