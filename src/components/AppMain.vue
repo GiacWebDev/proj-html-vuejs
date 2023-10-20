@@ -64,7 +64,6 @@ export default {
 
   </div>
 
-    
   <!-- blu -->
   <div class="Start-your-project py-5 white-text">
     <div class="container">
