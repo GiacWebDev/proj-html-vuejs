@@ -24,7 +24,7 @@ export default {
 
     <!-- bianca -->
   
-  <div class="Our-services py-5 text-center">
+  <div class="our-services py-5 text-center">
 
     <div class="container">
 
@@ -36,27 +36,50 @@ export default {
         </div>
       </div>
   
-      <div class="row row-cols-4 debug">
-        <div class="col d-flex flex-column justify-content-center">
-          immagine
-          <h4>titolo</h4>
-          <p>testo</p>
+      <div class="row row-cols-4">
+        
+        <div class="col d-flex flex-column justify-content-center p-5">
+          <div class="image d-flex align-items-center">
+            <img src="/images/Group-247.png" alt="service">
+          </div>
+          <div class="info">
+            <h4>data analysis</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam dolorem assumenda</p>
+          </div>
         </div>
-        <div class="col d-flex flex-column justify-content-center">
-          immagine
-          <h4>titolo</h4>
-          <p>testo</p>
+        
+        <div class="col d-flex flex-column justify-content-center p-5">
+          <div class="image d-flex align-items-center">
+            <img src="/images/Group-567.png" alt="service">
+          </div>
+          <div class="info">
+            <h4>data analysis</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam dolorem assumenda</p>
+          </div>
         </div>
-        <div class="col d-flex flex-column justify-content-center">
-          immagine
-          <h4>titolo</h4>
-          <p>testo</p>
+        
+        <div class="col d-flex flex-column justify-content-center p-5">
+          <div class="image d-flex align-items-center">
+            <img src="/images/Group-538.png" alt="service">
+          </div>
+          <div class="info">
+            <h4>data analysis</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam dolorem assumenda</p>
+          </div>
         </div>
-        <div class="col d-flex flex-column justify-content-center">
-          immagine
-          <h4>titolo</h4>
-          <p>testo</p>
+        
+        <div class="col d-flex flex-column justify-content-center p-5">
+          <div class="image d-flex align-items-center">
+            <img src="/images/Group-566.png" alt="service">
+          </div>
+          <div class="info">
+            <h4>data analysis</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam dolorem assumenda</p>
+          </div>
         </div>
+        
+      
+        
       </div>
 
       <button class="btns btn-orange">View All Services</button>
@@ -69,19 +92,22 @@ export default {
     <div class="container">
       <div class="row row-cols-2">
   
-        <div class="col">
-          immagine sopra un altra immagine
+        <div class="col double-images">
+          <img class="ps-5 pt-5 top" src="/images/men-data.png" alt="data">
+          <img class="under" src="/images/nemoodar.png" alt="">
         </div>
   
-        <div class="col">          
+        <div class="col info debug">          
           <h5>Start Your Project</h5>
-          <h2><strong>Grow your business</strong>with our strategy</h2>
+          <h2><strong>Grow your business</strong>
+          <br>
+          with our strategy</h2>
           <p class="light-blue-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt debitis laborum quam magnam eius adipisci, assumenda officia voluptates maxime odit.assumenda officia voluptates</p>
 
           <div class="button-box d-flex justify-content-left">
-              <button class="btns btn-orange me-3">try it now</button>
-              <button class="btns">explore more</button>
-            </div>
+            <button class="btns btn-orange me-3">try it now</button>
+            <button class="btns">explore more</button>
+          </div>
         </div>
       </div>
     </div>
@@ -111,12 +137,52 @@ export default {
 
 
 
-.container {
-  align-items: center;
+
+.our-services {
+  .container {
+    align-items: center;
+    .row {
+      padding-top: 50px;
+      .image {
+        width: 150px;
+        height: 150px;
+        img {
+          width: 100%;
+        }
+      }
+
+      h4 {
+        font-weight: 700;
+        margin: 60px 0 20px 0;
+      }
+    }
+  
+  }
+  
 }
+
 
 .Start-your-project {
   background-color: $light-primary;
+  .double-images {
+    position: relative;
+    .under {
+      position: absolute;
+      left: 0;
+    }
+    img {
+      width: 500px;
+    }
+    h5 {
+      color: $card-light;
+    }
+  }
+  .col.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 </style>

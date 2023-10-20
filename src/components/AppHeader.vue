@@ -52,6 +52,7 @@ export default {
 @use '../assets/scss/main.scss' as *;
 
  header {
+  z-index: 999!important;
   background-color: $light-primary;
   padding-bottom: 100px;
   .jumbotron {

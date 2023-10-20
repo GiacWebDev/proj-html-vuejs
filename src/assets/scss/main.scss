@@ -25,6 +25,10 @@ body {
   border: 1px solid white;
 }
 
+.debug-b {
+  border: 1px solid black;
+}
+
 .debug-bg {
   background-color: antiquewhite;
 }
@@ -42,6 +46,16 @@ h6 {
 
 h5 {
   font-size: 1rem;
+  color: $light-Seconday;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  color: $dark-grey-text;
 }
 
 // BOTTONI
@@ -50,7 +64,7 @@ h5 {
   padding: 7px 20px;
   border: 0px;
   border-radius: 50px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: capitalize;
   text-shadow: $dark-primary;
 }
