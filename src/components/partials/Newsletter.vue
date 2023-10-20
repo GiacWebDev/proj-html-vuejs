@@ -8,7 +8,7 @@ export default {
 
 <template>
   
-  <div class="newsletter container">
+  <div class="newsletter container btn-orange">
     <div class="row d-flex align-items-center">
       <div class="col-8">
         <h2><strong>we offer awesome services</strong></h2>
@@ -32,7 +32,6 @@ export default {
 @use '../../assets/scss/main.scss' as *;
 
 .newsletter {
-  background-color: $dark-Secondary;
   border-radius: 20px;
   padding: 50px 30px;
   color: $card-light;

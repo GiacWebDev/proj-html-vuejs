@@ -59,7 +59,7 @@ export default {
         </div>
       </div>
 
-      <button class="btns">View All Services</button>
+      <button class="btns btn-orange">View All Services</button>
     </div>
 
   </div>
@@ -79,7 +79,7 @@ export default {
           <p class="light-blue-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt debitis laborum quam magnam eius adipisci, assumenda officia voluptates maxime odit.assumenda officia voluptates</p>
 
           <div class="button-box d-flex justify-content-left">
-              <button class="btns me-3">try it now</button>
+              <button class="btns btn-orange me-3">try it now</button>
               <button class="btns">explore more</button>
             </div>
         </div>
