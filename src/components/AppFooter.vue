@@ -26,20 +26,12 @@ export default {
   
           <div class="col">
 
-            <div class="logo-box d-flex align-items-center">
-              <div class="image col-3">
-                <img src="/images/cropped-cropped-icon-270x270.png" alt="logo">
-              </div>
-              <div class="logo-text col-9">
-                <h5>phlox</h5>
-                <h5><strong>corporate</strong></h5>
-              </div>
-            </div>
+            <img src="/images/white-logo-2.png" alt="">
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat, deserunt provident dignissimos in autem!</p>
           </div>
   
-          <div class="col">
+          <div class="col ps-5">
             <h6><strong>quick links</strong></h6>
             <ul>
               <li><a href="#">services</a></li>
@@ -48,7 +40,7 @@ export default {
             </ul>
           </div>
   
-          <div class="col text-center">
+          <div class="col ps-3">
             <h6><strong>resources</strong></h6>
             <ul>
               <li><a href="#">art design</a></li>
@@ -90,40 +82,29 @@ footer {
     margin: 60px 0;
   }
   .col {
-    .logo-box {
-      width: 55%;
+    img {
+      width: 120px;
       margin-bottom: 20px;
-        img {
-        width: 45px;
+    }
+    h6 {
+      color: $card-light;
+    }
+    p {
+      color: $description-text;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        text-transform: capitalize;
+        strong {
+          color: white;
+        }
+        a {
+          text-decoration: none;
+          color: $description-text;
         }
       }
-      .logo-text {
-        margin-left: 6px;
-        padding-top: 5px;
-          h5 {
-          color: $card-light;
-          line-height: .5rem;
-        }
-      }
-      h6 {
-        color: $card-light;
-      }
-      p {
-        color: $description-text;
-      }
-      ul {
-        padding: 0;
-        li {
-          list-style: none;
-          text-transform: capitalize;
-          strong {
-            color: white;
-          }
-          a {
-            text-decoration: none;
-            color: $description-text;
-          }
-        }
     } 
   }
 }

@@ -13,7 +13,7 @@ export default {
     PriceList,
     Blog,
     Testimonial,
-    Partner
+    Partner,
   }
 }
 </script>
@@ -103,12 +103,13 @@ export default {
   <Partner />
 
 
-
 </template>
 
 
 <style lang="scss" scoped>
 @use '../assets/scss/main.scss' as *;
+
+
 
 .container {
   align-items: center;
