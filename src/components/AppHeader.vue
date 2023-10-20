@@ -35,7 +35,7 @@ export default {
           </div>
   
           <div class="col">
-           <img src="/public/images/header.png" alt="header">
+           <img src="/images/header.png" alt="header">
           </div>
   
         </div>

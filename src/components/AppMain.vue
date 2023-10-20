@@ -97,7 +97,7 @@ export default {
           <img class="under" src="/images/nemoodar.png" alt="">
         </div>
   
-        <div class="col info debug">          
+        <div class="col info">          
           <h5>Start Your Project</h5>
           <h2><strong>Grow your business</strong>
           <br>
@@ -106,7 +106,7 @@ export default {
 
           <div class="button-box d-flex justify-content-left">
             <button class="btns btn-orange me-3">try it now</button>
-            <button class="btns">explore more</button>
+            <button class="btns btn-blue">explore more</button>
           </div>
         </div>
       </div>
@@ -173,15 +173,18 @@ export default {
     img {
       width: 500px;
     }
+  }
+  .col.info {
+    padding-top: 120px;
     h5 {
       color: $card-light;
     }
-  }
-  .col.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+    p {
+      width: 500px;
+      margin: 0;
+      margin: 30px 0;
+    }
+
   }
 }
 
