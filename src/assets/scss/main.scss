@@ -58,6 +58,10 @@ p {
   color: $dark-grey-text;
 }
 
+ul {
+  list-style: none;
+}
+
 // BOTTONI
 
 .btns {
@@ -77,6 +81,10 @@ p {
 .btn-blue {
   background-image: linear-gradient(to right, $btn-light-blu, $btn-dark-blu);
   color: $card-light;
+}
+
+.btn-white {
+background-color: $card-light;
 }
 
 // CLASSI COLORE TESTI

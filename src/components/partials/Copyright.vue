@@ -1,7 +1,13 @@
 
 <script>
+
+import Chat from './Chat.vue';
+
 export default {
-  name: 'Copyright',  
+  name: 'Copyright',
+  components: {
+    Chat
+  }
 }
 </script>
 
@@ -36,6 +42,8 @@ export default {
       
       </div>
     </div>
+
+    <Chat />
   </div>
 
   

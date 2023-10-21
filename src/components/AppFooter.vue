@@ -3,7 +3,6 @@
 import Newsletter from './partials/Newsletter.vue';
 import Copyright from './partials/Copyright.vue';
 
-
 export default {
   name: 'AppFooter',
   components: {

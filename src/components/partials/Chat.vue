@@ -1,14 +1,14 @@
 
 <script>
 export default {
-  name: 'Chat',  
+  name: 'Chat'
 }
 </script>
 
 
 <template>
 
-  <div class="logo-chat d-flex align-items-center justify-content-center">
+  <div class="logo-chat d-flex align-items-center justify-content-center debug">
     <i class="fa-regular fa-comment fa-flip-horizontal" style="color: #ffffff;"></i>
   </div>
   
