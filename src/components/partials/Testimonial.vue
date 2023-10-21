@@ -22,9 +22,15 @@ export default {
       <div class="col">
         <div class="card">
           <div class="thumb">
-            immagine
+            <img src="/images//szabo-viktor-1266895-unsplash-1024x1024.png" alt="">
           </div>         
-          <p>recensione</p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <p><strong>nome</strong></p>
           <p>ruolo</p>
         </div>
@@ -60,6 +66,13 @@ export default {
 </template>
 
 
-<style>
+<style lang="scss" scoped>
+@use '../../assets/scss/main.scss' as *;
+
+img {
+  width: 70px;
+  border: 3px solid $dark-Secondary;
+  border-radius: 50%;
+}
 
 </style>
