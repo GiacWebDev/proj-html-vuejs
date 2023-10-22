@@ -8,7 +8,7 @@ export default {
 <template>
 
   <div class="testimonial my-5 text-center">
-    <div class="container debug">
+    <div class="container">
     <div class="row">
       <div class="col">
         <h5>testimonial</h5>
@@ -23,7 +23,7 @@ export default {
         <div class="card">
           <div class="thumb">
             <img src="/images//szabo-viktor-1266895-unsplash-1024x1024.png" alt="">
-          </div>         
+          </div>
           <div class="stars">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -31,33 +31,58 @@ export default {
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </div>
-          <p><strong>nome</strong></p>
-          <p>ruolo</p>
+          <div class="marks">
+            <p>"</p>
+          </div>         
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus maxime minus corporis sed. Quam!</p>
+          <h6><strong>michkel anegl</strong></h6>
+          <p>Marketing Management</p>
         </div>
       </div>
 
       <div class="col">
         <div class="card">
           <div class="thumb">
-            immagine
+            <img src="/images//szabo-viktor-1266895-unsplash-1024x1024.png" alt="">
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="marks">
+            <p>"</p>
           </div>         
-          <p>recensione</p>
-          <p><strong>nome</strong></p>
-          <p>ruolo</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus maxime minus corporis sed. Quam!</p>
+          <h6><strong>michkel anegl</strong></h6>
+          <p>Marketing Management</p>
         </div>
       </div>
 
       <div class="col">
         <div class="card">
           <div class="thumb">
-            immagine
+            <img src="/images//szabo-viktor-1266895-unsplash-1024x1024.png" alt="">
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="marks">
+            <p>"</p>
           </div>         
-          <p>recensione</p>
-          <p><strong>nome</strong></p>
-          <p>ruolo</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus maxime minus corporis sed. Quam!</p>
+          <h6><strong>michkel anegl</strong></h6>
+          <p>Marketing Management</p>
         </div>
       </div>
 
+    
     </div>
 
   </div>
@@ -69,10 +94,31 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/main.scss' as *;
 
-img {
+
+.card {
+  padding: 30px;
+  border: none;
+  img {
   width: 70px;
   border: 3px solid $dark-Secondary;
   border-radius: 50%;
+  }
+  .marks {
+    font-size: 200px;
+    font-style: italic;
+    p {
+      color: rgb(221, 221, 221);
+      line-height: 20px;
+      font-weight: bold;
+    }
+  }
+  .stars {
+    i {
+      font-size: .8rem;
+      color: $dark-Secondary;
+      margin: 20px 0;
+    }
+  }
 }
 
 </style>
