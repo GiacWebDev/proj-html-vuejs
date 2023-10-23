@@ -6,7 +6,6 @@ import AppFooter from './components/AppFooter.vue';
 
 import { QuickLinks } from './data/store';
 import { Resources } from './data/store';
-import { Contacts } from './data/store';
 
 
 
@@ -22,7 +21,6 @@ export default {
     return {      
       QuickLinks,
       Resources,
-      Contacts
     }
   }
 }
@@ -34,7 +32,7 @@ export default {
 
   <AppHeader />
   <AppMain />
-  <AppFooter :QuickLinks="QuickLinks" :Resources="Resources" :Contacts="Contacts" />
+  <AppFooter :QuickLinks="QuickLinks" :Resources="Resources" />
 
 
 </template>
