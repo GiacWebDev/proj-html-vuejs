@@ -1,6 +1,14 @@
 <script>
 export default {
-  name: 'NavBar'  
+  name: 'NavBar',
+  props: {
+    mainMenu: Object, // array menu Header
+    menuItemSelected: String // Aggiungo la prop per l'elemento selezionato
+  },
+  mounted() {
+    console.log('menuItemSelected:', this.menuItemSelected);
+  },
+
 }
 </script>
 
@@ -16,12 +24,12 @@ export default {
   
       <div class="menu text-left">
         <ul>
-          <li><a class="text-active" href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Portfolio</a></li>
+          <!-- ciclo il menù e se sono uguli applico la classe text-active -->
+          <li
+          v-for="menuItem in mainMenu" 
+          :key="menuItem.label"><a 
+          :href="menuItem.href" 
+          :class="{ 'text-active': menuItemSelected === menuItem.label }">{{ menuItem.label }}</a></li>
           <li><button class="btns btn-blue ms-3">Sign In</button></li>
         </ul>
       </div>
@@ -42,6 +50,7 @@ export default {
   top:0;
   width: 100%;
   padding: 15px 0;
+  z-index: 500;
 }
 
 .logo {

@@ -128,7 +128,6 @@ export default {
   <!-- bianca -->
   <Partner />
 
-  <h1>prova commit new machine ok</h1>
 
 
 </template>

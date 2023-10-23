@@ -1,9 +1,9 @@
 @import 'bootstrap/scss/bootstrap';
 @import './partials/_variables';
 
-@import '@fontsource/roboto/300.css';
-@import '@fontsource/roboto/400.css';
-@import '@fontsource/roboto/700.css';
+// @import '@fontsource/roboto/300.css';
+// @import '@fontsource/roboto/400.css';
+// @import '@fontsource/roboto/700.css';
 
 
 
@@ -16,7 +16,6 @@
 body {
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
-
 }
 
 // DEBUGS
@@ -81,6 +80,7 @@ ul {
 .btn-blue {
   background-image: linear-gradient(to right, $btn-light-blu, $btn-dark-blu);
   color: $card-light;
+  text-shadow: $dark-primary;
 }
 
 .btn-white {

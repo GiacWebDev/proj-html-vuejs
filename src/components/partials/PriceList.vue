@@ -109,7 +109,7 @@ export default {
 @use '../../assets/scss/main.scss' as *;
 
 .our-prices {
-  background-color: $light-primary;
+  background-image: linear-gradient(to bottom, $light-primary 0%, $light-primary 50vh, white 50vh, white 100%);
   .col.head p {
     width: 550px;
     color: $card-light;
@@ -134,6 +134,8 @@ export default {
     position: relative;
     .card {
       border-radius: 20px!important;
+      border: none;
+      box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
       .big-number {
       position: absolute;
       font-size: 250px;

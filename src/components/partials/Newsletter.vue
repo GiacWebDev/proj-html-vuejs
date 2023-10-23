@@ -15,10 +15,10 @@ export default {
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, magni.</p>
       </div>
 
-      <div class="col-4 debug">
-        <div class="box-input debug">
+      <div class="col-4">
+        <div class="box-input">
           <input type="text" placeholder="Enter Your Email Adress">
-          <button class="btns">subscribe</button>
+          <button class="btns btn-blue">subscribe</button>
         </div>
       </div>
     
@@ -33,11 +33,23 @@ export default {
 
 .newsletter {
   border-radius: 20px;
-  padding: 50px 30px;
   color: $card-light;
-  box-input {
-    background-color: $card-light;
+  .row {
+    padding: 50px 20px;
+    .box-input {
+      background-color: white;
+      border-radius: 50px;
+      padding: 3px 3px 3px 20px;
+      input {
+        border: none;
+        margin-right: 98px;
+      }
+    }
+    p {
+      color: $card-light;
+    }
   }
+  
 }
 
 </style>

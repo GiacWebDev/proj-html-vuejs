@@ -1,12 +1,19 @@
 <script>
 
-import NavBar from './partials/NavBar.vue'; 
+import NavBar from './partials/NavBar.vue';
+import { mainMenu } from '../assets/scss/data/store';
 
 export default {
   name: 'AppHeader',
   components: {
     NavBar
-  }
+  },
+  data() {
+    return {
+      mainMenu,
+      menuItemSelected: ''
+    }
+  } 
 }
 </script>
 
@@ -14,7 +21,7 @@ export default {
 <template>
   <header class="white-text">
 
-    <NavBar />
+    <NavBar :mainMenu="mainMenu" :menuItemSelected="menuItemSelected"/>
   
     <div class="jumbotron">
       <div class="container">

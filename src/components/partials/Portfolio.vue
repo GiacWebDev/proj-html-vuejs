@@ -12,7 +12,9 @@ export default {
     <h3><span>latest</span> work</h3>
   
     <div class="carosello debug-db">
-      <div class="card-work"></div>
+      <div class="card-work">
+        
+      </div>
     </div>
   </div>
 

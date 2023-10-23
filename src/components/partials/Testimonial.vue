@@ -10,7 +10,7 @@ export default {
   <div class="testimonial my-5 text-center">
     <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col head">
         <h5>testimonial</h5>
         <h3><strong>what</strong> people say</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, nihil placeat. Esse laboriosam ex neque architecto consequuntur? Exercitationem, expedita illo.</p>
@@ -33,7 +33,7 @@ export default {
           </div>
           <div class="marks">
             <p>"</p>
-          </div>         
+          </div>     
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusamus maxime minus corporis sed. Quam!</p>
           <h6><strong>michkel anegl</strong></h6>
           <p>Marketing Management</p>
@@ -93,6 +93,13 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/scss/main.scss' as *;
+
+.col.head {
+  margin: 50px 0;
+  p {
+    width: 550px;
+  }
+} 
 
 
 .card {

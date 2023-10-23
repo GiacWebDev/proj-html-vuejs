@@ -76,7 +76,7 @@ export default {
 @use '../assets/scss/main.scss' as *;
 
 footer {
-  background-color: $light-primary;
+  background-image: linear-gradient(to bottom, white 0%, white 12vh, $light-primary 12vh, $light-primary 100%);
   .infos {
     margin: 60px 0;
   }
