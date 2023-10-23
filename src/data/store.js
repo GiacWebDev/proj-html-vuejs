@@ -29,7 +29,7 @@ export const mainMenu = [
     label: "Portfolio",
   },
 ];
-// console.log(mainMenu);
+console.log(mainMenu);
 
 export const QuickLinks = [
   {
@@ -47,6 +47,7 @@ export const QuickLinks = [
     label: "Blog",
   },
 ];
+console.log(QuickLinks);
 
 export const Resources = [
   {
@@ -72,5 +73,23 @@ export const Resources = [
   {
     href: "#",
     label: "WebSecurity",
+  },
+];
+
+export const Contacts = [
+  {
+    href: "#",
+    Address:
+      "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051",
+  },
+
+  {
+    href: "#",
+    Phone: "Computer",
+  },
+
+  {
+    href: "#",
+    Email: "It News",
   },
 ];

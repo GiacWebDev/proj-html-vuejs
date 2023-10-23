@@ -1,7 +1,7 @@
 <script>
 
 import NavBar from './partials/NavBar.vue';
-import { mainMenu } from '../assets/scss/data/store';
+import { mainMenu } from '../data/store';
 
 export default {
   name: 'AppHeader',

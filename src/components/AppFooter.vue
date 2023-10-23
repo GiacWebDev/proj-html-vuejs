@@ -3,11 +3,18 @@
 import Newsletter from './partials/Newsletter.vue';
 import Copyright from './partials/Copyright.vue';
 
+
 export default {
   name: 'AppFooter',
   components: {
     Newsletter,
     Copyright
+  },
+  props: {
+    QuickLinks: Array,
+    Resources: Array,
+    Contacts: Array,
+    menuItemSelected: String
   }
 }
 </script>
@@ -33,30 +40,33 @@ export default {
           <div class="col ps-5">
             <h6><strong>quick links</strong></h6>
             <ul>
-              <li><a href="#">services</a></li>
-              <li><a href="#">contact</a></li>
-              <li><a href="#">blog</a></li>
+              <li 
+              v-for="itemMenu in QuickLinks" 
+              :key="itemMenu.label"
+              :class="{'text-active-white' : itemMenu === menuItemSelected }">
+              <a :href="itemMenu.href">{{ itemMenu.label }}</a>
+              </li>
             </ul>
           </div>
   
           <div class="col ps-3">
             <h6><strong>resources</strong></h6>
             <ul>
-              <li><a href="#">art design</a></li>
-              <li><a href="#">computer</a></li>
-              <li><a href="#">it news</a></li>
-              <li><a href="#">networking</a></li>
-              <li><a href="#">web security</a></li>
+              <li v-for="itemResources in Resources" 
+              :key="itemResources.label"
+              :class="{'text-active-white' : itemResources === menuItemSelected }">
+              <a :href="itemResources.href">{{ itemResources.label }}</a></li>
             </ul>
           </div>
   
           <div class="col">
             <h6><strong>contact us</strong></h6>
             <ul>
-              <li><a href="#"><strong>address: </strong>patricia c. amedee 4401 waldeck street grapevine nashville, tx 76051</a></li>
-              <br>
-              <li><a href="#"><strong>phone: </strong>+99 (0) 101 000 888</a></li>
-              <li><a href="#"><strong>email: </strong>info@yourdomain.com</a></li>
+              <li v-for="contact in Contacts" :key="contact.href">
+                <a :href="contact.href">
+                  <strong>{{ contact.label }}:</strong> {{ contact.value }}
+                </a>
+              </li>
             </ul>
           </div>
   
