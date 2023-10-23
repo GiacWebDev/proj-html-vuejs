@@ -13,7 +13,6 @@ export default {
   props: {
     QuickLinks: Array,
     Resources: Array,
-    Contacts: Array,
     menuItemSelected: String
   }
 }
@@ -62,11 +61,10 @@ export default {
           <div class="col">
             <h6><strong>contact us</strong></h6>
             <ul>
-              <li v-for="contact in Contacts" :key="contact.href">
-                <a :href="contact.href">
-                  <strong>{{ contact.label }}:</strong> {{ contact.value }}
-                </a>
-              </li>
+              <li><a href="#"><strong>address: </strong>patricia c. amedee 4401 waldeck street grapevine nashville, tx 76051</a></li>
+              <br>
+              <li><a href="#"><strong>phone: </strong>+99 (0) 101 000 888</a></li>
+              <li><a href="#"><strong>email: </strong>info@yourdomain.com</a></li>
             </ul>
           </div>
   
