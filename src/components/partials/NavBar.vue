@@ -27,7 +27,8 @@ export default {
           <!-- ciclo il menù e se sono uguli applico la classe text-active -->
           <li
           v-for="menuItem in mainMenu" 
-          :key="menuItem.label"><a 
+          :key="menuItem.label">
+          <a
           :href="menuItem.href" 
           :class="{ 'text-active': menuItemSelected === menuItem.label }">{{ menuItem.label }}</a></li>
           <li><button class="btns btn-blue ms-3">Sign In</button></li>
@@ -76,6 +77,9 @@ ul {
     a {
       color: $card-light;
       text-decoration: none;
+      &:hover {
+        color: $dark-Secondary;
+      }
     }
   }
 }
